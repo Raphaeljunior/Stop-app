@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:ignore="TextFields,ContentDescription,SpUsage" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/createAccident"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/sync_bg"
+            android:padding="8dip" >
+
+	        <TextView
+	            android:id="@+id/txtCreateAccident"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:text="Report An Accident"
+	            android:textColor="#A00000"
+	            android:textSize="18dip"
+	            android:textStyle="bold"
+	            tools:ignore="HardcodedText" />
+
+    	</RelativeLayout>
+		<LinearLayout
+		    android:id="@+id/textPanel"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:padding="8dip">
+		    
+		    <!-- User Location -->
+	        <TextView
+	            android:id="@+id/location"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/locaton_name"
+	            android:textSize="20dip"
+	            android:textStyle="bold" />	
+	        <EditText
+	            android:id="@+id/locText"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:ems="10"
+	            android:layout_marginBottom="15dip"
+                android:layout_marginTop="10dip" >
+	            <requestFocus />
+	        </EditText>
+			
+	        <!-- Accident Category -->
+	        <TextView
+	            android:id="@+id/category"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/category"
+	            android:textSize="20dip"
+	            android:textStyle="bold"
+	            android:layout_marginBottom="10dip" />	
+	         <Spinner
+		        android:id="@+id/spinCategory" 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dip"
+			    android:layout_marginBottom="10dip" />
+			 
+	         <!-- Number Injured -->
+	         <TextView
+	             android:id="@+id/injured" 
+	             android:layout_width="fill_parent"
+	             android:layout_height="wrap_content"
+	             android:text="@string/number_injured"
+	             android:textSize="20dip"
+	             android:textStyle="bold"
+	             android:layout_marginTop="10dip"
+			     android:layout_marginBottom="10dip" />	
+	          <EditText
+	              android:id="@+id/injText"
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+	              android:ems="10"
+	              android:layout_marginBottom="15dip"
+                  android:layout_marginTop="5dip"
+                  android:inputType="number"  />
+			 
+	          <!-- Number Dead -->
+	          <TextView
+	              android:id="@+id/dead"
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+	              android:text="@string/number_dead"
+	              android:textSize="20dip"
+	              android:textStyle="bold"
+	              android:layout_marginTop="10dip"
+			      android:layout_marginBottom="10dip" />	
+	            <EditText
+	                android:id="@+id/deadText"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:ems="10"
+	                android:layout_marginBottom="15dip"
+                	android:layout_marginTop="5dip"
+                	android:inputType="number"  >
+	            </EditText>
+		</LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dip">
+	        <Button
+	            android:id="@+id/cap_button"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/capture_scene" />
+	
+	        <ImageView
+	            android:id="@+id/sceneImage"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+	
+	        <Button
+	            android:id="@+id/submit_button"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/submit" />
+	     </LinearLayout>
+	     
+        <RelativeLayout
+            android:id="@+id/relativeLogout"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="@drawable/sync_bg" >
+	        
+	        <LinearLayout android:id="@+id/thumbnail" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"	
+		        android:layout_alignParentLeft="true"
+		        android:background="@drawable/image_bg" 
+			    android:layout_marginRight="5dip"
+			    android:layout_marginLeft="5dip"
+			    android:layout_marginTop="5dip"
+			    android:layout_marginBottom="5dip"
+			    android:orientation="vertical">
+        
+			</LinearLayout>
+   		 </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

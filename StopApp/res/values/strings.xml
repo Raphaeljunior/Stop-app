@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Stop</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login">Login</string>
+    <string name="capture">Capture</string>
+    <string name="image">image</string>
+    <string name="capture_scene">Capture Scene</string>
+    <string name="locaton_name">Locaton Name</string>
+    <string name="category">Accident Category</string>
+    <string name="number_injured">Number Injured</string>
+    <string name="number_dead">Number Dead</string>
+    <string name="submit">Submit</string>
+    
+    
+    <!-- Accident Categories -->
+    <string name="category_collision">Collision</string>
+    <string name="category_loss">Loss Of Control</string>
+    <string name="category_pedestrian">Pedestrian</string>
+
+</resources>

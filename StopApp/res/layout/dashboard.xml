@@ -1,0 +1,27 @@
+<com.android.stop.DashboardLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    tools:ignore="HardcodedText">
+    
+    <!-- Scene Button -->
+    <Button
+        android:id="@+id/btn_capture"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_report_scene"
+        android:text="Capture Scene"
+        android:background="@drawable/image_bg"
+        android:padding="10dip"  />
+    
+    <!-- Stats Button -->
+    <Button
+        android:id="@+id/btn_stats"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_view_statistics"
+        android:text="View Statistics"
+        android:background="@drawable/image_bg"
+        android:padding="10dip"  />
+
+</com.android.stop.DashboardLayout>
